@@ -1,0 +1,24 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql+pymysql://root:@localhost/flask_website_bootstrap_python",
+    "prod_uri": "mysql+pymysql://root:@localhost/flask_website_bootstrap_python",
+    "fb_url": "https://facebook.com/LifeExperiences",
+    "tw_url": "https://twitter.com/LifeExperiences",
+    "gh_url": "https://github.com/LifeExperiences",
+    "bg_name": "YUVA Motors",
+    "about_text": "HI!! My name is Hemant Kapoor and i am learning Python.",
+    "no_of_posts": 3,
+    "login_img": "login.svg",
+    "admin_user": "honey",
+    "admin_password": "XXXX",
+    "upload_location": "C:\\Users\\Anurag\\PycharmProjects\\FLASK_MOD\\venv\\static",
+    "HeadingCaro": "YUVA Motors",
+    "SubHeadingCaro": "Your One Stop Shop for 2-Wheelers."
+
+
+  }
+}
+
+

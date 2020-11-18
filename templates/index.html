@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+{% block body %}
+<style>
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+</style>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" style="height:400px; border-style: solid; background:black;">
+        <div class="carousel-item active" style="height:300px; margin-top: 40px;">
+            <div class="container" style="background-image: url('/static/img/MFC2.png');background-repeat: no-repeat; background-size:100% 100%;border-style: double; height:300px;">
+                <div class="carousel-caption">
+                    <h1 style="margin-bottom: -2.5rem;">{{params['HeadingCaro']}}</h1>
+                    <p style="margin-bottom: -7.5rem;">{{params['SubHeadingCaro']}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" style="height:300px; border-style: solid;margin-top: 40px;">
+            <div class="container" style="background-image: url('/static/img/Nexzu2.jpg'); background-repeat: no-repeat; background-size:100% 100%;border-style: double; height:300px;">
+                <div class="carousel-caption">
+                    <h1 style="margin-bottom: -2.5rem;">{{params['HeadingCaro']}}</h1>
+                    <p style="margin-bottom: -7.5rem;">{{params['SubHeadingCaro']}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" style="height:300px; border-style: solid;margin-top: 40px;">
+            <div class="container" style="background-image: url('/static/img/mh22.jpg'); background-repeat: no-repeat;background-size:100% 100%;border-style: double; height:300px;">
+                <div class="carousel-caption">
+                    <h1 style="margin-bottom: -2.5rem; color:black;">{{params['HeadingCaro']}}</h1>
+                    <p style="margin-bottom: -7.5rem;">{{params['SubHeadingCaro']}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- Main Content To Do fetch it using for loop from database  -->
+<div class="container">
+    <!--    <div class="row" style="border-style: solid; margin-top: 01rem;">-->
+    <!-- --------------------------------------------------Three Circles started here---------------------------------------------------- -->
+    <div class="row" style="margin-top: 01rem;">
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140" style="
+                 background-image: url('/static/img/MFC.png');background-repeat:
+                 no-repeat; background-size:100% 100%;">
+                <title style="color:white;">Placeholder</title>
+            </svg>
+            <h2>MAHINDRA First Choice</h2>
+            <p>Waqt Ne hai kiya humpe kaisa sitam, Tum bhi bezaar ho barbaad hai hum, Jaane Kiss Raaste humko le jayenge Gardishaan
+            ye mere dagmagaate kadam.</p>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140" style="background-image: url('/static/img/Nexzu.jpg');background-repeat: no-repeat; background-size:100% 100%;">
+                <!--                <img src="url('/static/img/Nexzu.jpg')" >-->
+                <title>Placeholder</title>
+                <!--                <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>-->
+            </svg>
+            <h2>NEXZU Electric Vehicles</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140" style=" background-image: url('/static/img/mahindra-two-wheelers-logo_thumb.png');background-repeat: no-repeat; background-size:100% 100%;">
+                <title>Placeholder</title>
+            </svg>
+            <h2>MAHINDRA 2-Wheelers.</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <!-- ---------------------------------------------Three Circles Completed here-------------------------------- -->
+    <hr div class="row">
+    <!-- -----------------------------------Posts Will be starting here --------------------------------------------->
+    <!-- <div class="col-lg-12 col-md-12 col-sm-12"> -->
+    <!-- To Do fetch it using for loop from database  -->
+    {% for post in posts %}
+    <hr>
+    <div class="col-sm-7 col-md-7 col-lg-7" style="float:right; ">
+        <!-- ---------------------------Posts Texts Starting Here-------------------------------------------------- -->
+        <!-- <div class="col-lg-7"> -->
+        <a href="/post/{{post.slug}}">
+            <h2 class="post-title">
+                {{post.title}}
+            </h2>
+            <h3 class="post-subtitle">
+                {{post.tagline}}
+            </h3>
+        </a>
+        <p class="post-meta">Posted by
+            <a href="#">Admin</a>
+            on {{post.date}}
+        </p>
+        <!-- </div> -->
+        {{post.content[:]}}
+        </li></a>
+    </div>
+    <!-- ---------------------------------Posts Text Ending Here------------------------------------------------ ---------- -->
+    <!-- --------------------------------------Posts Image Starting Here------------------------------------------------------ -->
+    {% set fname = 'img/' + post.img_file %}
+    <!-- <div class="col-sm-4 col-md-4 col-lg-4" style="border-style: solid;background-color:yellow; float:left;"> -->
+    <div class="col-sm-5 col-md-5 col-lg-5" style=" float:left  margin: 0 15px 0 0;">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg
+         featurette-image img-fluid mx-auto" width="500" height="500"
+             xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+             focusable="false" role="img" aria-label="Placeholder: 500x500"
+             style="background-image: url('{{ url_for('static', filename=fname) }}');
+             background-repeat:no-repeat; background-size:100% 100%;">
+            <title>Placeholder</title>
+        </svg>
+    </div>
+    <div style="clear: both;" />
+    <!-- -------------------------------------------Posts Image Ends Here----------------------------------------------------------- -->
+    {% endfor %}
+
+    <div style="clear: both;" />
+    <!-- Pager -->
+
+    <div class="clearfix" style="clear: left;">
+        <a class="btn btn-primary float-left" href="{{prev}}"> &larr; Older Posts</a>
+        <a class="btn btn-primary float-right" href="{{next}}">Next Posts &rarr;</a>
+    </div>
+    <!-- </div> -->
+</div>
+</div>
+{% endblock %}
